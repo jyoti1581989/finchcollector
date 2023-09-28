@@ -46,7 +46,7 @@ def add_feeding(request, finch_id):
 
 class FinchCreate(CreateView):
    model = Finch
-   fields = '__all__'
+   fields = ['name','species', 'description', 'age']
   
 class FinchUpdate(UpdateView):
   model = Finch
